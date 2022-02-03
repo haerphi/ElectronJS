@@ -18,4 +18,5 @@
 
 ### Build the project:
 
-- Build windows: `yarn build`
+- Build local: `yarn build`
+- Build with Docker: `yarn docker-build-linux`
