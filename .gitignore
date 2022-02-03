@@ -7,6 +7,10 @@
 
 # build
 /dist
+apps/linux
+apps/windows
+apps/mac
+
 
 # testing
 /coverage

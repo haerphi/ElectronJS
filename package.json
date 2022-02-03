@@ -7,9 +7,13 @@
   "build": {
     "appId": "<com.your_app>"
   },
+  "linux": {
+    "target": "deb"
+  },
   "main": "public/electron.js",
   "homepage": "./",
   "scripts": {
+    "hello-world": "node ./scripts/hello-world",
     "react-start": "react-scripts start",
     "react-build": "react-scripts build",
     "react-test": "react-scripts test --env=jsdom",
@@ -17,6 +21,7 @@
     "electron-build": "electron-builder",
     "release": "yarn react-build && electron-builder --publish=always",
     "build": "yarn react-build && yarn electron-build",
+    "docker-build-linux": "./scripts/build-linux.sh",
     "start": "concurrently \"cross-env BROWSER=none yarn react-start\" \"wait-on http://localhost:3000 && electron .\""
   },
   "eslintConfig": {
