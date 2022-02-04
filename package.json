@@ -14,16 +14,17 @@
   "homepage": "./",
   "scripts": {
     "hello-world": "node ./scripts/hello-world",
-    "react-start": "react-scripts start",
-    "react-build": "react-scripts build",
-    "react-test": "react-scripts test --env=jsdom",
-    "react-eject": "react-scripts eject",
+    "react-start": "npx react-scripts start",
+    "react-build": "npx react-scripts build",
+    "react-test": "npx react-scripts test --env=jsdom",
+    "react-eject": "npx react-scripts eject",
     "electron-build": "electron-builder",
     "release": "yarn react-build && electron-builder --publish=always",
     "build": "yarn react-build && yarn electron-build",
     "local-build": "./scripts/build.sh",
     "docker-build-linux": "./scripts/build-linux.sh",
-    "start": "concurrently \"cross-env BROWSER=none yarn react-start\" \"wait-on http://localhost:3000 && electron .\""
+    "work": "cross-env BROWSER=none yarn react-start",
+    "serve": "electron ."
   },
   "eslintConfig": {
     "extends": [

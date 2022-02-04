@@ -1,7 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
 
-export default () => (
+import ColorCube from "./components/color-cube";
+
+const App = () => (
   <div className="App">
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
@@ -15,7 +17,10 @@ export default () => (
         rel="noopener noreferrer"
       >
         Learn React Test
+        <ColorCube color="red" />
       </a>
     </header>
   </div>
 );
+
+export default App;
