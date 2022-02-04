@@ -10,6 +10,7 @@
 apps/linux
 apps/windows
 apps/mac
+apps/local
 
 
 # testing
