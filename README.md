@@ -14,7 +14,7 @@
 
 ### To work on the project:
 
-- launch the project: `yarn start`
+- launch the project: `yarn work` and then `yarn serve`
 
 ### Build the project:
 
