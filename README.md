@@ -1,22 +1,17 @@
-# 🚀 ElectronJS with React kickstart 👩‍🚀
+# electron-kickstart
 
-### Requirement
+A sample Electron kickstart with react, webpack and typescript
 
-- Node required version: `>= 14.17.0`
-- Yarn version: `>= 1.22.15`
+## Install
 
-### Installation
+- `yarn install`
 
-- clone repo: `git clone git@github.com:haerphi/ElectronJs-kickstart.git`
-- install dependence: `yarn install`
+## Usage
 
-## How does it works ?
+### Dev
 
-### To work on the project:
+- `yarn start`
 
-- launch the project: `yarn work` and then `yarn serve`
+### Production
 
-### Build the project:
-
-- Build local: `yarn local-build`
-- Build with Docker: `yarn docker-build-linux`
+- `yarn dist` to build an executable
